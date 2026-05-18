@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-trues-like/tags). For example,
+
+```javascript
 import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@v0.0.0-esm/index.mjs';
 ```
 
@@ -107,7 +112,7 @@ var sh = getShape( y );
 
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@v0.0.0-esm/index.mjs';
+import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@esm/index.mjs';
 
 // Specify a list of data types:
 var dt = [
