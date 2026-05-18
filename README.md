@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@esm/index.mjs';
+import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@v0.0.0-esm/index.mjs';
 ```
 
 #### truesLike( x )
@@ -107,7 +107,7 @@ var sh = getShape( y );
 
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-empty@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@esm/index.mjs';
+import truesLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-trues-like@v0.0.0-esm/index.mjs';
 
 // Specify a list of data types:
 var dt = [
