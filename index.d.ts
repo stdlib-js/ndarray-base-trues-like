@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,21 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var emptyLike = require( '@stdlib/ndarray-base-empty-like' );
-var fill = require( '@stdlib/ndarray-base-fill' );
-
-
-// MAIN //
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Creates an ndarray filled with `true` values and having the same shape and data type as a provided ndarray.
+* Creates an ndarray filled with `true` values and having the same shape and data type as a provided input ndarray.
 *
-* @param {ndarray} x - input array
-* @returns {ndarray} ndarray
+* @param x - input array
+* @returns filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray-shape' );
@@ -42,20 +38,24 @@ var fill = require( '@stdlib/ndarray-base-fill' );
 * });
 * // returns <ndarray>
 *
+* var sh = getShape( x );
+* // returns [ 2, 2 ]
+*
+* var dt = String( getDType( x ) );
+* // returns 'bool'
+*
 * var y = truesLike( x );
 * // returns <ndarray>[ [ true, true ], [ true, true ] ]
 *
-* var sh = getShape( y );
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* var dt = String( getDType( y ) );
+* dt = String( getDType( y ) );
 * // returns 'bool'
 */
-function truesLike( x ) {
-	return fill( emptyLike( x ), true );
-}
+declare function truesLike<T extends typedndarray<boolean>>( x: T ): T;
 
 
 // EXPORTS //
 
-module.exports = truesLike;
+export = truesLike;
